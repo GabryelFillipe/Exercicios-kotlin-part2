@@ -1,26 +1,16 @@
 package exercicios
 
 fun main() {
-    fun classificarNumero() {
-        val numeros = (1 .. 100).toList()
-        val result = mutableListOf<String>()
 
-        for (numero in numeros){
-            if (numero % 3 == 0 && numero % 5 == 0 ){
-                val tipo =  "BatataQuente"
-                result.add(tipo)
-            }
-            if (numero % 3 == 0){
-                val tipo =  "Batata"
-                result.add(tipo)
-            }
-            if (numero % 5 == 0){
-                val tipo =  "quente"
-                result.add(tipo)
-            }
+    val numeros = (1..100).toList()
 
+    for (numero in numeros) {
+        val resultado = when {
+            numero % 15 == 0 -> "BatataQuente"
+            numero % 3 == 0 -> "Batata"
+            numero % 5 == 0 -> "Quente"
+            else -> numero.toString()
         }
-        println(result)
+        println(resultado)
     }
-    classificarNumero()
 }
