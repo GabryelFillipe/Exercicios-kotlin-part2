@@ -4,8 +4,8 @@ fun main() {
 
     val idades = listOf(14,12,19,90,22)
 
-    var totalIdades = idades.filter { idade -> idade > 18 }
-    var media = totalIdades.reduce { acumulador, idade -> acumulador + idade  }.toDouble() / totalIdades.size
+    val totalIdades = idades.filter { idade -> idade > 18 }
+    val media = totalIdades.reduce { acumulador, idade -> acumulador + idade  }.toDouble() / totalIdades.size
 
     println(media)
 }

@@ -2,20 +2,20 @@ package exercicios
 
 fun main() {
     fun classificarNumero() {
-        var numeros = (1 .. 100).toList()
-        var result = mutableListOf<String>()
+        val numeros = (1 .. 100).toList()
+        val result = mutableListOf<String>()
 
         for (numero in numeros){
             if (numero % 3 == 0 && numero % 5 == 0 ){
-                var tipo =  "BatataQuente"
+                val tipo =  "BatataQuente"
                 result.add(tipo)
             }
             if (numero % 3 == 0){
-                var tipo =  "Batata"
+                val tipo =  "Batata"
                 result.add(tipo)
             }
             if (numero % 5 == 0){
-                var tipo =  "quente"
+                val tipo =  "quente"
                 result.add(tipo)
             }
 
